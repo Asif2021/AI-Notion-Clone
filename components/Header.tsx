@@ -2,6 +2,7 @@
 
 import { SignedOut, SignedIn, SignInButton, UserButton } from "@clerk/clerk-react";
 import { useUser } from "@clerk/nextjs"
+import Breadcrumbs from "./Breadcrumbs";
 
 function Header() {
     const {user} = useUser();
@@ -10,6 +11,8 @@ function Header() {
         {user && (<h1 className="text-2xl font-bold">{user?.firstName} {`'s`}  Space </h1> )}
 
 {/* Breadcrumbs */}
+<Breadcrumbs/>
+
 <div>
     <SignedOut>
         <SignInButton/>
