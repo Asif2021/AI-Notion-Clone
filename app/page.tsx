@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { ArrowLeftCircle } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="">
-    <h1>lets build an api productivity app</h1>
-    <Button>Click Me</Button>
-    </div>
+    <main className="flex space-x-2 items-center animate-pulse">
+    <ArrowLeftCircle className="w-12 h-12" />
+    <h1 className="font-bold">Get Started with creating New Document</h1>
+    </main>
   );
 }
